@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Slightly lighter black for the background */
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #1e1e1e; /* Slightly lighter black for the container */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    outline: none; /* Remove default outline */
+}
+
+.tab button.active {
+    background-color: #555;
+}
+
+.tab button:hover {
+    background-color: #444;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: black;
+    outline: none; /* Remove default outline */
+}
+
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: white; /* Bright blue color for buttons */
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: gray;
+}
+
+.form-group-switch {
+    text-align: center;
+}
+
+.form-group-switch a {
+    color: white; /* Change link color to match button */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-group-switch a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-group-switch p {
+    color: white;
+    margin-bottom: 10px;
+}

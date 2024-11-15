@@ -1,0 +1,116 @@
+/* General Container Styling */
+.container {
+    width: 100%;
+    min-height: 100vh; /* Adjust height for better responsiveness */
+    background-color: #161616;
+}
+
+/* Header Section Styling */
+.header-website {
+    background-color: #161616;
+    color: white;
+    padding: 20px; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+.header-website h1 {
+    color: white;
+    font-size: 48px;
+    margin: 0; /* Remove default margin */
+}
+
+.header-website p {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+/* Header Links Styling */
+.header-links {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between links */
+    margin-top: 20px;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+}
+
+.header-links a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Login Button Styling */
+.header-website a {
+    display: inline-flex; /* Change to inline-flex for better alignment */
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.header-website a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Search Bar Styling */
+.search {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Space between input and button */
+    align-items: center;
+    max-width: 500px; /* Set max-width for responsiveness */
+    margin: 20px auto; /* Center the search bar */
+}
+
+.search input {
+    flex: 1; /* Allow input to grow */
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.search button {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.search:hover input {
+    background-color: white;
+    color: black;
+}
+
+.search:hover button {
+    background-color: white;
+    color: black;
+}
+

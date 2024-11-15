@@ -1,0 +1,119 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: white;
+    color: black;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/* Add a cool background effect */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Left content styling */
+.left-content, .right-content {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-content {
+    background: linear-gradient(135deg, #f3f4f6, #d9e2ec);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.left-content h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.left-content p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.left-content:hover h1 {
+    color: #007bff;
+}
+
+/* Right content styling */
+.right-content {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.right-content h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.right-content p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 15px 25px;
+    color: white;
+    background: linear-gradient(to right, #4caf50, #81c784);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+    background: linear-gradient(to right, #388e3c, #66bb6a);
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-content, .right-content {
+        margin-bottom: 20px;
+    }
+}
